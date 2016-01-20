@@ -1,4 +1,4 @@
 learnyounode
 ============
 
-learnyounode exercises of http://nodeschool.io
+My solutions to http://nodeschool.io

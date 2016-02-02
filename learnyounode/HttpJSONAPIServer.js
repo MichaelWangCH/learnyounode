@@ -19,8 +19,8 @@ var server = http.createServer(function(request, response) {
 
       response.end(JSON.stringify(jsonObj));
     } else {
-      res.writeHead(404)
-      res.end();
+      response.writeHead(404)
+      response.end();
     }
   }
 });

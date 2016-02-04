@@ -1,13 +1,3 @@
-var promise = promise.then(null, function (err) {
-    console.error('THERE IS AN ERROR!!!');
-    console.error(err.message);
-});
-
-var promise = promise.catch(function (err) {
-    console.error('THERE IS AN ERROR!!!');
-    console.error(err.message);
-});
-
 // The way you have learned: create promise through the constructor.
 var promise = new Promise(function (fulfill, reject) {
   fulfill('SECRET VALUE');
@@ -23,3 +13,13 @@ var promise = new Promise(function (fulfill, reject) {
 });
 
 var promise = Promise.reject(new Error('SECRET VALUE'));
+
+var promise = promise.then(null, function (err) {
+    console.error('THERE IS AN ERROR!!!');
+    console.error(err.message);
+});
+
+promise.catch(function (err) {
+    console.error('THERE IS AN ERROR!!!');
+    console.error(err.message);
+});
